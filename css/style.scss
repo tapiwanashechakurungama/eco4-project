@@ -197,13 +197,13 @@ table {
         width: 100%;
         padding: 8px;
         border: 1px solid #ccc;
-        border-radius: 3px;
+        border-radius: 4px;
         display: flex;
     }
     textarea{
         width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
+        padding: 11px;
+        border: 1px solid #ccccccd7;
         border-radius: 3px;
     }
     button{
@@ -216,7 +216,7 @@ table {
 }
 .footer{
     height: 50vh;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.879);
     .container{
         display: flex;
         flex-direction: column;
@@ -227,7 +227,7 @@ table {
         input[type="email"]{
             width: 70%;
             padding: 8px;
-            background-color: #fff;
+            background-color: #ffffffe9;
             border: none;
             border-radius: 5px;
     }

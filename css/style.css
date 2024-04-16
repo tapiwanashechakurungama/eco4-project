@@ -205,13 +205,13 @@ table {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 4px;
   display: flex;
 }
 .question textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 11px;
+  border: 1px solid rgba(204, 204, 204, 0.8431372549);
   border-radius: 3px;
 }
 .question button {
@@ -224,7 +224,7 @@ table {
 
 .footer {
   height: 50vh;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.879);
 }
 .footer .container {
   display: flex;
@@ -237,7 +237,7 @@ table {
 .footer .container input[type=email] {
   width: 70%;
   padding: 8px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9137254902);
   border: none;
   border-radius: 5px;
 }
