@@ -51,7 +51,46 @@ table {
 }
 // phone
 .pc-nav{
-    display: none;
+    transition: .5s all ease-in-out;
+    display: none !important;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        height: 100vh;
+        font-size: larger;
+        li{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    button{
+        width: 13rem;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        height: 4rem;
+        display: none;
+    }
+    img{
+        display: none;
+    }
+   
+}
+.active{
+    .pc-nav{
+        transition: all ease-in-out .5s; 
+        display: block !important;
+    }
 }
 
 .mobile-nav{display: flex;
@@ -230,7 +269,7 @@ table {
             border-radius: 5px;
     }
     button{
-        width: 7rem;
+        width: 7.1rem;
         height: 3rem;
         background-color: green;
         color: white;
@@ -280,7 +319,22 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) { 
     .pc-nav{
-        display: block;
+        height: 15vh;
+        display: block !important;
+        button{
+            display: block;
+        }
+        img{
+            display: block;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            height: 15vh;
+            li{
+                font-size: 1.2rem;
+            }
+        }
     }
 .mobile-nav{
 display: none;     
